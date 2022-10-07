@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="password" value="123456"/>
+  <parameter name="emailId" value="pradheep302565@gmail.com"/>
+  <test thread-count="5" name="ChromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.testNG.com.CrossBrowser">
+        <methods>
+          <include name="launch" invocation-numbers="0"/>
+          <include name="closebrowser"/>
+          <include name="browserLaun"/>
+        </methods>
+      </class> <!-- com.testNG.com.CrossBrowser -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="5" name="FirefoxTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.testNG.com.CrossBrowser">
+        <methods>
+          <include name="launch"/>
+          <include name="closebrowser"/>
+          <include name="browserLaun"/>
+        </methods>
+      </class> <!-- com.testNG.com.CrossBrowser -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
